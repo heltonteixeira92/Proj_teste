@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "django.contrib.sites",
+    # 3rd party
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
 ]
 
 MIDDLEWARE = [
@@ -118,3 +123,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# django-allauth
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'Allauth.account.auth_backends.AuthenticationBackend',
+]
