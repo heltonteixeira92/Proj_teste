@@ -19,5 +19,7 @@ Para conferir qualidade de código padrão pip8:
 Pictures:
 
 ![](Screenshot_2021-02-07 Consulta de CEP.png)
+
 ![](Screenshot_2021-02-07 Cadastro.png)
+
 ![](Screenshot_2021-02-07 Screenshot.png)
