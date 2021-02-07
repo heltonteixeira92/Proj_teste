@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Consulta de CEP{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+    <h1><center> <a href = "accounts/login/enderecos/">Consultar Endereço</a> </center></h1>
+    {% else %}
+    <a>Você deve estar logado para consultar endereços</a>
+    {% endif %}
+{% endblock %}
