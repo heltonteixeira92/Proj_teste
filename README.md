@@ -13,3 +13,11 @@ Suportada versão 3 de Python
 Para conferir qualidade de código padrão pip8:
 
 ```rodar comando flake8 no terminal```
+
+
+
+Pictures:
+
+![](Screenshot_2021-02-07 Consulta de CEP.png)
+![](Screenshot_2021-02-07 Cadastro.png)
+![](Screenshot_2021-02-07 Screenshot.png)
