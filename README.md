@@ -10,6 +10,12 @@ Suportada versão 3 de Python
 
 ```console python -m venv .venv .venv\Scripts\activate pip install -r requirements-dev.txt```
 
-Para conferir qualidade de código padrão pip8:
+Run:
+
+```py manage.py migrate```
+
+````py manage runserver````
+
+Conferir qualidade de código padrão pip8:
 
 ```rodar comando flake8 no terminal```

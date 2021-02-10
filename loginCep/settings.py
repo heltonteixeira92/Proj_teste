@@ -130,12 +130,8 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = 'enderecos/'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ACCOUNT_SESSION_REMEMBER = True
-
-# django-crispy-forms
-
-CRISPY_TEMPLATE_PACK = "bootstrap4"
-
 # Só precisa digitar a senha uma vez
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 # Não precisa de username
@@ -146,3 +142,7 @@ ACCOUNT_AUTHENTICATION_METHOD = "email"
 ACCOUNT_EMAIL_REQUIRED = True
 # Email único
 ACCOUNT_UNIQUE_EMAIL = True
+
+# django-crispy-forms
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"

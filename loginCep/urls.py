@@ -24,4 +24,5 @@ urlpatterns = [
     # local
     path('', include('pages.urls', namespace='pages')),
     path('accounts/login/enderecos/', include('enderecos.urls', namespace='enderecos')),
+    path('accounts/signup/enderecos/', include('enderecos.urls', namespace='enderecos')),
 ]
