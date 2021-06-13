@@ -1,5 +1,7 @@
 from pathlib import Path
+import dj_database_url
 
+from functools import partial
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -72,6 +74,10 @@ WSGI_APPLICATION = 'loginCep.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+
+default_db_url = 'sqlite:///' + str(BASE_DIR / 'db.sqlite3')
+
+parse_database = partial(dj_database_url.parse, conn_max_age=600)
 
 DATABASES = {
     'default': {
